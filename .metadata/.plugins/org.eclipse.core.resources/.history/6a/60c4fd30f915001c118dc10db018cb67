@@ -1,0 +1,28 @@
+import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SampleSelenium {
+	@Test
+	public void TestMethod() {
+		
+	
+
+	
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\priyadarshinib\\eclipse-seleniumTraining\\seleniumProject\\drivers\\chromedriver.exe");
+		    //WebDriverManager.chromedriver().setup();
+			WebDriver driver = new ChromeDriver();
+			driver.get("https://www.google.com");
+			driver.manage().window().maximize();
+	
+			//Thread.sleep(3000);
+			driver.quit();
+
+
+
+}
+}
